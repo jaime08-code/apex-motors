@@ -172,6 +172,27 @@ main section p {
         max-width: 350px;
     }
 
+        /* Adaptación de la galería a móviles */
+    .contenedor-coches {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    /* Centrar el título y el contenido de la cabecera */
+    header {
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    /* Centrar los iconos de redes sociales */
+    .redes-sociales {
+        justify-content: center;
+    }
+
 }
 
 /* Estilos de la galería de vehículos */
