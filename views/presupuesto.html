@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto | APEX MOTORS</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<!-- Cabecera principal con el nombre y el menú de navegación -->
+    <header>
+        <h1>APEX MOTORS</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="presupuesto.html" class="activo">Presupuesto</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+<!-- Contenido principal de la página de presupuesto -->
+    <main>
+        <section>
+            <h2>Solicita tu presupuesto</h2>
+            <p>Rellena el siguiente formulario y nos pondremos en contacto contigo.</p>
+        </section>
+
+<!-- Formulario para solicitar un presupuesto -->
+        <section class="formulario-presupuesto">
+
+            <h2>Datos personales</h2>
+
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{3,20}" minlength="3"
+                    maxlength="20" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" maxlength="9" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comentarios">Más información:</label>
+                <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+
+                <div>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad.</label>
+                </div>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
+        </section>
+    </main>
+    
+<!-- Pie de página con enlaces a redes sociales y derechos de autor -->
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/redes/instagram.svg" alt="Icono de Instagram" width="30" height="30">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/redes/facebook.svg" alt="Icono de Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/redes/youtube.svg" alt="Icono de YouTube" width="30" height="30">
+            </a>
+        </div>
+        <p>&copy; 2026 APEX MOTORS. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
